@@ -4,7 +4,7 @@ module.exports = function configJSON(req) {
     metaData: {
       // the location of our icon file
       icon: `images/icon.svg`,
-      category: 'customer'
+      category: 'Custom'
     },
     // For Custom Activity this must say, "REST"
     type: 'REST',
@@ -37,6 +37,7 @@ module.exports = function configJSON(req) {
       }
     },
     configurationArguments: {
+       "applicationExtensionKey": "d6af9883-bb89-49d8-b81c-7d0b7713af80",
       publish: {
         url: `https://${req.headers.host}/modules/discount-code/publish`
       },
