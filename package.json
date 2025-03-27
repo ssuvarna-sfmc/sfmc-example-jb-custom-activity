@@ -16,6 +16,10 @@
     "bump:minor": "./node_modules/version-bump-prompt/bin/bump.js --minor --all --tag",
     "bump:patch": "./node_modules/version-bump-prompt/bin/bump.js --patch --all --tag"
   },
+  "engines": {
+    "node": "22.5.1",
+    "npm": "10.8.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
