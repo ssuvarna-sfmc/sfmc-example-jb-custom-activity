@@ -5,7 +5,7 @@ module.exports = function configJSON(req) {
     metaData: {
       // the location of our icon file
       icon: `images/icon.svg`,
-      category: 'customer'
+      category: 'Custom'
     },
     // For Custom Activity this must say, "REST"
     type: 'RESTDECISION',
@@ -28,6 +28,7 @@ module.exports = function configJSON(req) {
       }
     },
     configurationArguments: {
+      "applicationExtensionKey": "54db87c3-ecb6-4616-913b-23d833bea221",
       save: {
         url: `https://${req.headers.host}/modules/discount-redemption-split/save`
       },
