@@ -5,9 +5,6 @@
   "author": "Salesforce Marketing Cloud",
   "description": "Journey Builder Custom Activities",
   "license": "BSD-3-Clause",
-"engines": {
-    "node": "22.x"
-  },
   "scripts": {
     "dev": "concurrently \"npm start\" \"webpack --watch\"",
     "build": "webpack --mode production",
@@ -18,6 +15,10 @@
     "bump:major": "./node_modules/version-bump-prompt/bin/bump.js --major --all --tag",
     "bump:minor": "./node_modules/version-bump-prompt/bin/bump.js --minor --all --tag",
     "bump:patch": "./node_modules/version-bump-prompt/bin/bump.js --patch --all --tag"
+  },
+  "engines": {
+    "node": "22.5.1",
+    "npm": "10.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",
